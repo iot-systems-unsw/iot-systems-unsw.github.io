@@ -55,10 +55,12 @@
 .icon a {font-family: Arial, Helvetica, sans-serif;}
 .icon a:hover {text-decoration: underline}
 
-.column11 {float: left; width: 100.0%; padding: 10px;}
-.column21 {float: left; width: 100.0%; padding: 10px;}
-
+.column11 {float: left; width: 100.0%; padding: 10px;}.column21 {float: left; width: 100.0%; padding: 10px;}
 .row:after {content: ""; display: table; clear: both;}
+@media (max-width: 800px) {.column11 {width: 200.0%}}
+@media (max-width: 500px) {.column11 {width: 100%}}
+@media (max-width: 800px) {.column21 {width: 200.0%}}
+@media (max-width: 500px) {.column21 {width: 100%}}
 </style>
 </head>
 <body>
@@ -79,12 +81,12 @@
 
 
 <div class="row">
-<div class="column11" style="background-color:white;"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<div class="column11"style="width=100.0%; background-color:white;"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <p class="text">
 This is IoT Systems Research Group, School of Computer Science and Engineering (CSE) at the University of New South Wales (UNSW), Sydney. <br><br>This group research....
 </p>
 </div>
-<div class="column21" style="background-color:white;">
+<div class="column21"style="width=100.0%; background-color:white;">
 <h2 class="text"></a>News:</h2>
 <ul class="text" >
 
